@@ -1,0 +1,95 @@
+﻿@using System.Web.Optimization
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Guids</title>
+    @Styles.Render("~/resources/styles")
+    @Scripts.Render("~/resources/jquery")
+    @Scripts.Render("~/resources/scripts")
+</head>
+<body>
+
+    <div class="container">
+        <h1>Guid: <span id="guid-raw"><span title="Loading..." class="loading new-guid-loading"></span></span></h1>
+
+        <div>
+            <button class="btn-new-guid" id="btn-new-guid">Guid.New();</button>
+            <div title="Loading..." class="loading new-guid-loading" style="padding-top: 6px;"></div>
+        </div>
+        <div class="clear"></div>
+
+        <div class="formats">
+            <div class="label">Braces Lower Case Format</div>
+            <div id="braces-lower" class="control">
+                <div title="Loading..." class="loading new-guid-loading"></div>
+            </div>
+
+
+            <div class="label">Braces Upper Case Format</div>
+            <div id="braces-upper" class="control">
+                <div title="Loading..." class="loading new-guid-loading"></div>
+            </div>
+
+            <div class="label">Digital Lower Case Format</div>
+            <div id="digital-lower" class="control">
+                <div title="Loading..." class="loading new-guid-loading"></div>
+            </div>
+
+            <div class="label">Digital Upper Case Format</div>
+            <div id="digital-upper" class="control">
+                <div title="Loading..." class="loading new-guid-loading"></div>
+            </div>
+
+            <div class="label">Hyphens Lower Case Format</div>
+            <div id="hyphens-lower" class="control">
+                <div title="Loading..." class="loading new-guid-loading"></div>
+            </div>
+
+            <div class="label">Hyphens Upper Case Format</div>
+            <div id="hyphens-upper" class="control">
+                <div title="Loading..." class="loading new-guid-loading"></div>
+            </div>
+
+            <div class="label">Parentheses Lower Case Format</div>
+            <div id="parentheses-lower" class="control">
+                <div title="Loading..." class="loading new-guid-loading"></div>
+            </div>
+
+            <div class="label">Parentheses Upper Case Format</div>
+            <div id="parentheses-upper" class="control">
+                <div title="Loading..." class="loading new-guid-loading"></div>
+            </div>
+            <div class="label">Hexadecimal Lower Case Format</div>
+            <div id="hexadecimal-lower" class="control">
+                <div title="Loading..." class="loading new-guid-loading"></div>
+            </div>
+
+            <div class="label">Hexadecimal Upper Case Format</div>
+            <div id="hexadecimal-upper" class="control"><div title="Loading..." class="loading new-guid-loading"></div></div>
+            <div class="clear"></div>
+        </div><p>
+            Generate New Guid Service (Web API) in JSON or XML format: <a href="/api/new">http://guids.azurewebsites.net/api/new</a><br /><br />
+            Site source code: <a href="https://github.com/Devville/guids.azurewebsites.net">https://github.com/Devville/guids.azurewebsites.net</a>
+        </p>
+    </div>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-59753586-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+</body>
+</html>
